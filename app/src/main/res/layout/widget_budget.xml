@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/widget_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@drawable/widget_bg">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="💰 AI 預算管家 (今日 $0.00)"
+            android:textColor="#38BDF8"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/btn_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⟳ 刷新"
+            android:textColor="#4ADE80"
+            android:textSize="12sp"
+            android:padding="4dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="AI Studio 餘額: NT$2,690 | Claude API: US$111.43"
+        android:textColor="#F8FAFC"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tv_line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Claude訂閱額度: 工作階段 8% / 每週 2% (額度包 $1,000)"
+        android:textColor="#FBBF24"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/tv_updated"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="點擊開啟完整圖表 ｜ 最後更新: 剛剛"
+        android:textColor="#94A3B8"
+        android:textSize="10sp" />
+</LinearLayout>
